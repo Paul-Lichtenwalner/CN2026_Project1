@@ -92,3 +92,22 @@ ul, ol {
     white-space: pre-wrap; /* wrap long lines nicely */
     max-width: 100%;
 }
+
+/* Container for social icons */
+.contact-links {
+    text-align: center;       /* center the icons */
+    margin-top: 20px;         /* space above the icons */
+}
+
+/* Social icons */
+.contact-links .social-icon {
+    width: 50px;              /* resize to a reasonable size */
+    height: 50px;             /* keeps aspect ratio */
+    margin: 0 15px;           /* spacing between icons */
+    transition: transform 0.2s; /* smooth hover effect */
+    vertical-align: middle;   /* aligns properly with text if needed */
+}
+
+.contact-links .social-icon:hover {
+    transform: scale(1.1);    /* slight grow on hover */
+}
