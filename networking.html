@@ -111,6 +111,61 @@ This process demonstrates how DNS, IP addressing, and web protocols interact
 to make websites accessible across the global internet.
 </p>
 
+<h2>DNS Lookup Example</h2>
+
+<p>
+The nslookup command was used to query DNS and determine the
+IP addresses associated with this website's domain.
+</p>
+
+<pre>
+nslookup paul-lichtenwalner.github.io
+
+Non-authoritative answer:
+Name: paul-lichtenwalner.github.io
+Addresses:
+2606:50c0:8003::153
+2606:50c0:8000::153
+2606:50c0:8001::153
+2606:50c0:8002::153
+185.199.110.153
+185.199.108.153
+185.199.109.153
+185.199.111.153
+</pre>
+
+<p>
+The results show that the domain resolves to multiple IPv4 and IPv6
+addresses belonging to GitHub Pages hosting servers. DNS returns
+several addresses to improve reliability and distribute traffic
+across multiple servers.
+</p>
+
+<h2>How a User Connects to This Website</h2>
+
+<p>
+The diagram below shows how networking technologies work together when
+a user accesses this website.
+</p>
+
+<div class="network-diagram">
+
+<div class="node">User Browser</div>
+
+<div class="arrow">↓</div>
+
+<div class="node">DNS Server</div>
+
+<div class="arrow">↓</div>
+
+<div class="node">GitHub Pages Web Server</div>
+
+<div class="arrow">↓</div>
+
+<div class="node">HTTPS Response</div>
+
+</div>
+
 </div>
 
 </body>
