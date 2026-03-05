@@ -74,3 +74,21 @@ ul, ol {
 .arrow {
     font-size: 24px;
 }
+
+/* DNS Example Container */
+.dns-example {
+    border: 2px solid #1e73be;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.dns-example pre {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;      /* horizontal scroll if too wide */
+    white-space: pre-wrap; /* wrap long lines nicely */
+    max-width: 100%;
+}
