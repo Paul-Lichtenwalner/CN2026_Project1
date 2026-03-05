@@ -55,3 +55,22 @@ hr {
 ul, ol {
     margin-left: 25px;
 }
+
+.network-diagram {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.node {
+    background-color: #1e73be;
+    color: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 250px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 24px;
+}
