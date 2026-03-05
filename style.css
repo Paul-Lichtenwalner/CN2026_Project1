@@ -6,20 +6,40 @@ body {
 
 /* Banner */
 .banner {
+    position: relative;       /* needed for the pseudo-element */
     background-color: #1e73be;
     color: white;
     text-align: center;
     padding: 50px 20px;
+    overflow: hidden;         /* ensures the slash doesn’t overflow */
 }
 
 .banner h1 {
     margin: 0;
     font-size: 40px;
+    position: relative;       /* keeps text above slash */
+    z-index: 2;
 }
 
 .banner p {
     margin-top: 10px;
     font-size: 18px;
+    position: relative;       /* ensures paragraph is above slash */
+    z-index: 2;
+}
+
+/* Diagonal red slash */
+.banner::after {
+    content: "";
+    position: absolute;
+    top: -60%;                /* shift up so it starts above the banner */
+    left: -80%;               /* shift left so the slash leans toward left */
+    width: 200%;              /* long enough to cross diagonally */
+    height: 200%;
+    background-color: rgba(255, 0, 0, 0.3); /* semi-transparent red */
+    transform: rotate(-45deg); /* diagonal */
+    z-index: 1;               /* behind the text */
+    pointer-events: none;     /* doesn’t block clicks */
 }
 
 /* Navigation bar */
