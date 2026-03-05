@@ -19,35 +19,37 @@
 
 <div class="content">
 
-<h2>Domain Name System (DNS)</h2>
+    <h2>Domain Name System (DNS)</h2>
 
-<p>
-The Domain Name System (DNS) is responsible for translating human-readable
-domain names into IP addresses that computers can understand. When a user
-enters a website address into a browser, the system must determine which
-server on the Internet is hosting that website.
-</p>
+    <p>
+        The Domain Name System (DNS) is responsible for translating human-readable
+        domain names into IP addresses that computers can understand. When a user
+        enters a website address into a browser, the system must determine which
+        server on the Internet is hosting that website.
+    </p>
 
-<p>
-For example, instead of remembering a numeric IP address, users can access
-this website using its domain name. DNS servers receive the request and
-return the correct IP address of the web server hosting the site.
-</p>
+    <p>
+        For example, instead of remembering a numeric IP address, users can access
+        this website using its domain name. DNS servers receive the request and
+        return the correct IP address of the web server hosting the site.
+    </p>
 
-<p>
-This process is known as <b>domain name resolution</b>. Tools such as
-<b>nslookup</b> or <b>dig</b> can be used to view the DNS records associated
-with a domain name.
-</p>
+    <p>
+        This process is known as <b>domain name resolution</b>. Tools such as
+        <b>nslookup</b> or <b>dig</b> can be used to view the DNS records associated
+        with a domain name.
+    </p>
 
-<h2>DNS Lookup Example</h2>
+    <!-- DNS Lookup Example Container -->
+    <div class="dns-example">
+        <h2>DNS Lookup Example</h2>
 
-<p>
-The nslookup command was used to query DNS and determine the
-IP addresses associated with this website's domain.
-</p>
+        <p>
+            The nslookup command was used to query DNS and determine the
+            IP addresses associated with this website's domain.
+        </p>
 
-<pre>
+        <pre>
 nslookup paul-lichtenwalner.github.io
 
 Non-authoritative answer:
@@ -61,112 +63,105 @@ Addresses:
 185.199.108.153
 185.199.109.153
 185.199.111.153
-</pre>
+        </pre>
 
-<p>
-The results show that the domain resolves to multiple IPv4 and IPv6
-addresses belonging to GitHub Pages hosting servers. DNS returns
-several addresses to improve reliability and distribute traffic
-across multiple servers.
-</p>
+        <p>
+            The results show that the domain resolves to multiple IPv4 and IPv6
+            addresses belonging to GitHub Pages hosting servers. DNS returns
+            several addresses to improve reliability and distribute traffic
+            across multiple servers.
+        </p>
+    </div>
 
-<hr>
+    <hr>
 
-<h2>IP Addressing</h2>
+    <h2>IP Addressing</h2>
 
-<p>
-Every device connected to the internet must have a unique Internet Protocol
-(IP) address. An IP address identifies the location of a device on a network
-and allows data to be routed correctly between systems.
-</p>
+    <p>
+        Every device connected to the internet must have a unique Internet Protocol
+        (IP) address. An IP address identifies the location of a device on a network
+        and allows data to be routed correctly between systems.
+    </p>
 
-<p>
-There are two main versions of IP addressing used on the Internet:
-</p>
+    <p>
+        There are two main versions of IP addressing used on the Internet:
+    </p>
 
-<ul>
-<li><b>IPv4</b> – A 32-bit address format written as four numbers separated by periods (example: 192.168.1.1).</li>
-<li><b>IPv6</b> – A newer 128-bit address format designed to support the growing number of devices connected to the internet.</li>
-</ul>
+    <ul>
+        <li><b>IPv4</b> – A 32-bit address format written as four numbers separated by periods (example: 192.168.1.1).</li>
+        <li><b>IPv6</b> – A newer 128-bit address format designed to support the growing number of devices connected to the internet.</li>
+    </ul>
 
-<p>
-When a user visits a website, DNS returns the IP address of the web server.
-The browser then uses this address to establish a connection with the server
-hosting the website.
-</p>
+    <p>
+        When a user visits a website, DNS returns the IP address of the web server.
+        The browser then uses this address to establish a connection with the server
+        hosting the website.
+    </p>
 
-<hr>
+    <hr>
 
-<h2>HTTP vs HTTPS</h2>
+    <h2>HTTP vs HTTPS</h2>
 
-<p>
-Hypertext Transfer Protocol (HTTP) is the protocol used for communication
-between web browsers and web servers. It defines how requests and responses
-are formatted and transmitted over the Internet.
-</p>
+    <p>
+        Hypertext Transfer Protocol (HTTP) is the protocol used for communication
+        between web browsers and web servers. It defines how requests and responses
+        are formatted and transmitted over the Internet.
+    </p>
 
-<p>
-HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP.
-HTTPS encrypts data using Transport Layer Security (TLS), ensuring that
-information transmitted between the client and server cannot easily be
-intercepted or modified by attackers.
-</p>
+    <p>
+        HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP.
+        HTTPS encrypts data using Transport Layer Security (TLS), ensuring that
+        information transmitted between the client and server cannot easily be
+        intercepted or modified by attackers.
+    </p>
 
-<p>
-Modern websites use HTTPS to protect sensitive data such as login
-credentials, personal information, and financial transactions.
-GitHub Pages automatically provides HTTPS for hosted websites,
-ensuring secure communication between users and the server.
-</p>
+    <p>
+        Modern websites use HTTPS to protect sensitive data such as login
+        credentials, personal information, and financial transactions.
+        GitHub Pages automatically provides HTTPS for hosted websites,
+        ensuring secure communication between users and the server.
+    </p>
 
-<hr>
+    <hr>
 
-<h2>How These Technologies Work Together</h2>
+    <h2>How These Technologies Work Together</h2>
 
-<p>
-When a user visits this website, several networking technologies work
-together to deliver the page:
-</p>
+    <p>
+        When a user visits this website, several networking technologies work
+        together to deliver the page:
+    </p>
 
-<ol>
-<li>The user enters the website address into their browser.</li>
-<li>DNS resolves the domain name to an IP address.</li>
-<li>The browser connects to the server using the IP address.</li>
-<li>Communication occurs using the HTTPS protocol.</li>
-<li>The server responds with the website content, which is displayed to the user.</li>
-</ol>
+    <ol>
+        <li>The user enters the website address into their browser.</li>
+        <li>DNS resolves the domain name to an IP address.</li>
+        <li>The browser connects to the server using the IP address.</li>
+        <li>Communication occurs using the HTTPS protocol.</li>
+        <li>The server responds with the website content, which is displayed to the user.</li>
+    </ol>
 
-<p>
-This process demonstrates how DNS, IP addressing, and web protocols interact
-to make websites accessible across the global internet.
-</p>
+    <p>
+        This process demonstrates how DNS, IP addressing, and web protocols interact
+        to make websites accessible across the global internet.
+    </p>
 
-<hr>
+    <hr>
 
-<h2>How a User Connects to This Website</h2>
+    <h2>How a User Connects to This Website</h2>
 
-<p>
-The diagram below shows how networking technologies work together when
-a user accesses this website.
-</p>
+    <p>
+        The diagram below shows how networking technologies work together when
+        a user accesses this website.
+    </p>
 
-<div class="network-diagram">
-
-<div class="node">User Browser</div>
-
-<div class="arrow">↓</div>
-
-<div class="node">DNS Server</div>
-
-<div class="arrow">↓</div>
-
-<div class="node">GitHub Pages Web Server</div>
-
-<div class="arrow">↓</div>
-
-<div class="node">HTTPS Response</div>
-
-</div>
+    <div class="network-diagram">
+        <div class="node">User Browser</div>
+        <div class="arrow">↓</div>
+        <div class="node">DNS Server</div>
+        <div class="arrow">↓</div>
+        <div class="node">GitHub Pages Web Server</div>
+        <div class="arrow">↓</div>
+        <div class="node">HTTPS Response</div>
+    </div>
 
 </div>
 
