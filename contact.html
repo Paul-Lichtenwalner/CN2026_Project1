@@ -37,6 +37,15 @@ to reach out on LinkedIn if you have questions, opportunities,
 or would like to connect professionally.
 </p>
 
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required><br><br>
+    <input type="email" id="email" placeholder="Your Email" required><br><br>
+    <textarea id="message" placeholder="Your Message" required></textarea><br><br>
+    <button type="submit">Send</button>
+</form>
+
 <div class="contact-links">
     <a href="https://www.linkedin.com/in/paul-lichtenwalner-9b801825b" target="_blank">
         <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
@@ -50,4 +59,9 @@ or would like to connect professionally.
 </div>
 
 </body>
+<!-- XSS Protection -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+
+<!-- Supabase Script -->
+<script type="module" src="script.js"></script>
 </html>
